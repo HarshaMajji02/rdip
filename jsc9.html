@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fibonacci Series</title>
+</head>
+<body>
+<script>
+
+var fseries = function (num)
+{
+if (num===1)
+{
+return [0, 1];
+}
+else
+{
+var sum = fseries(num - 1);
+sum.push(sum[sum.length - 1] + sum[sum.length - 2]);
+return sum;
+}
+}
+console.log(fseries(6));
+</script>
+ 
+ 
+
+</body>
+</html>
