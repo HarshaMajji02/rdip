@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="calc.css">
+<script src="as2.js"></script>
+<style> 
+    .title{ 
+    margin-bottom: 10px; 
+    text-align:center; 
+    width: 200px; 
+    color:blue; 
+    border: solid black 2px; 
+    } 
+
+    
+  </style> 
+
+</head>
+<body>
+  <div class = title >Calculator</div> 
+  <div class="form-signup" id="singup">
+    <form  method="get" onsubmit="return validate()">
+      <label for="firstnumber">First Number: <input id="1st"  placeholder="Enter 1st Number"></label><br>
+
+      <label for="secondnumber">Second Number:<input id="2nd"placeholder="Enter 2nd Number"></label><br>
+    </form>
+    <label for="output">Output<input id="output" placeholder="output" disabled></label><br>
+    <button onclick="addition()">Additon</button>
+    <button onclick="subtraction()">Subtraction</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="square()">Sqrt</button>
+    <button onclick="division()">divison</button>
+    <button onclick="percent()">Percent</button>
+    <button onclick="absolute()">Absolute</button>
+  </div>
+
+</body>
+</html>

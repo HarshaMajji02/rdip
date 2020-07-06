@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title> Palindrome and Anagram </title>
+	 <link rel="stylesheet" href="palindrome.css">
+	<script type="text/javascript" src="as2.js">
+
+	</script>
+	 <link rel="stylesheet" href="palindrome.css"> 
+</head>
+<body>
+	<form method="get">
+		<h1>Checking Palindrome </h1>
+		<input type="text" id="txtbox" placeholder="Enter a String" /><br><br>
+		<input type="button" onclick="fun()" value="Check Palindrome" />
+	</form>
+	<form name=check>
+		<h1>Checking Anagram </h1>
+      String A:     <input type="text" name="anagram0" placeholder="Enter a String "><br><br>
+    String B:   <input type="text" name="anagram1" placeholder="Enter a String" ><br>
+    <br>
+           <input type="submit" onclick="checkingANAGRAM(document.check.anagram0.value,document.check.anagram1.value);" value="Checking Anagram" >
+        </form>
+</body>
+</html>
